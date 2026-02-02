@@ -42,7 +42,14 @@ public class Program {
 		slDao.insert(newSeller);
 		System.out.println("Inserted! New id = "+newSeller.getId());
 		
+		System.out.println();
 		
+		System.out.println(">>> Test 5: Seller update<<<");
+		newSeller = slDao.findById(1);
+		newSeller.setName("Martha Waine");
+		
+		slDao.update(newSeller);
+		System.out.println("Update completed");
 	}
 
 }
