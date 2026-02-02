@@ -26,7 +26,13 @@ public class Program {
 			System.out.println(obj);
 		}
 		
+		System.out.println();
 		
+		System.out.println(">>> Test 3: Seller findAll <<<");
+		slList = slDao.findAll();
+		for(Seller obj:slList) {
+			System.out.println(obj);
+		}
 		
 		
 	}
